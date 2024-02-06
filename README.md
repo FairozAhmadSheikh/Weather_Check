@@ -18,7 +18,7 @@ To run the app locally, follow these steps:
 2. Navigate to the project directory.
 3. Install dependencies using `npm install` or `yarn install`.
 4. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace the placeholder `API_KEY` in the URL in `Home.js` with your API key.
-5. Start the development server using `npm start` or `yarn start`.
+5. Start the development server using `npm run dev` or `yarn start`.
 6. Open your browser and visit `http://localhost:3000` to view the app.
 
 ## Technologies Used
