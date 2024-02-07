@@ -109,7 +109,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               {" "}
-              Fairoz Ahmad
+              Fairoz
             </a>
           </p>
         </div>
