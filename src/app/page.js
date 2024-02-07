@@ -34,30 +34,28 @@ export default function Home() {
   // Returns Html or JSX
   return (
     <div
-      className="flex justify-center items-center h-screen text-white"
+      className="flex justify-center items-center min-h-screen text-white"
       style={{
         backgroundImage: `url(${backgroundImageUrl})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        height: "100vh",
-        width: "100vw",
       }}
     >
-      <div className="bg-black bg-opacity-90 rounded-3xl text-lg">
+      <div className="bg-black bg-opacity-90 rounded-3xl text-lg p-4 w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
         <input
           type="text"
           placeholder="Enter City Here"
           onChange={handleInput}
-          className="bg-slate-300 text-black-500 m-4 p-2 rounded-lg text-black text-2xl"
+          className="bg-slate-300 text-black-500 mb-4 p-2 rounded-lg text-black text-2xl w-full"
           value={location}
         />
         <button
-          className="bg-slate-200 text-black text-xl rounded-lg m-4 p-2"
+          className="bg-slate-200 text-black text-xl rounded-lg m-2 p-2 w-full"
           onClick={search}
           disabled={loading} // Disable button when loading
         >
-          {loading ? "Loading..." : "Get Weather"} {/* Change button text when loading */}
+          {loading ? "Loading..." : "Search"} {/* Change button text when loading */}
         </button>
 
         {/* Show loading section if loading state is true */}
@@ -66,7 +64,7 @@ export default function Home() {
         {/* Show weather data when available */}
         {data && (
           <>
-            <h3 className="ml-4 p-1 text-3xl">{data.name}</h3>
+            <h3 className="ml-4 mt-4 mb-2 text-3xl">{data.name}</h3>
             <h2 className="ml-4 p-1 text-2xl">Receiving from {data.base}</h2>
             {/* Check if wind object exists before accessing its properties */}
             {data.wind && (
@@ -101,7 +99,7 @@ export default function Home() {
           </>
         )}
 
-        <div className=" m-4  text-white rounded-md text-xl p-1">
+        <div className="m-4 text-white rounded-md text-xl">
           <p>
             © Developed by
             <a
@@ -111,7 +109,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               {" "}
-              Fairoz Ahmad Sheikh
+              Fairoz Ahmad
             </a>
           </p>
         </div>
