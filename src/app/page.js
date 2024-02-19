@@ -103,11 +103,12 @@ export default function Home() {
           <p>
             © Developed by
             <a
-              className="bg-slate-100 m-2 rounded-lg p-1 text-black"
-              href="https:www.github.com/FairozAhmadSheikh"
-              target="_blank"
-              rel="noopener noreferrer"
+             className="bg-slate-100 m-2 rounded-lg p-1 text-black"
+             href="https://www.github.com/FairozAhmadSheikh"
+             target="_blank"
+             rel="noopener noreferrer"
             >
+
               {" "}
               Fairoz
             </a>
